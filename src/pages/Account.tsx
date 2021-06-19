@@ -77,7 +77,7 @@ const Account: React.FC<AccountProps> = ({ setUsername, username }) => {
 };
 
 export default connect<OwnProps, StateProps, DispatchProps>({
-  mapStateToProps: (state) => ({
+  mapStateToProps: (state: any) => ({
     username: state.user.username
   }),
   mapDispatchToProps: {
